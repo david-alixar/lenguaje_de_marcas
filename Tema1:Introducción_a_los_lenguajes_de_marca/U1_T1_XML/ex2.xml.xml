@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<tiendas_cc>
+
+    <tienda>
+        <nombre> Zara </nombre>
+        <num_parcelas> 2 </num_parcelas>
+        <metros_cuadrados> 230 </metros_cuadrados>
+        <encargado>
+            <nombre> Pedro </nombre>
+            <apellidos> Perez Sanchez </apellidos>
+            <telefono> 954126547 </telefono>
+            <NSS> 14684654165146 </NSS>
+        </encargado>
+    </tienda>
+
+    <tienda>
+        <nombre> H M </nombre>
+        <num_parcelas> 3 </num_parcelas>
+        <metros_cuadrados> 320 </metros_cuadrados>
+        <encargado>
+            <nombre> Oscar </nombre>
+            <apellidos> Sanchez Ramirez </apellidos>
+            <telefono> 955126547 </telefono>
+            <NSS> 14684254165116 </NSS>
+        </encargado>
+    </tienda>
+
+    <tienda>
+        <nombre> Bershka </nombre>
+        <num_parcelas> 2 </num_parcelas>
+        <metros_cuadrados> 277 </metros_cuadrados>
+        <encargado>
+            <nombre> Monica </nombre>
+            <apellidos> Garcia Marquez </apellidos>
+            <telefono> 954136517 </telefono>
+            <NSS> 14684614166516 </NSS>
+        </encargado>
+    </tienda>
+
+    <tienda>
+        <nombre> Burguer King </nombre>
+        <num_parcelas> 1 </num_parcelas>
+        <metros_cuadrados> 136 </metros_cuadrados>
+        <encargado>
+            <nombre> Esteban </nombre>
+            <apellidos> Romero Perez </apellidos>
+            <telefono> 954926147 </telefono>
+            <NSS> 14681054165346 </NSS>
+        </encargado>
+    </tienda>
+
+
+    <tienda>
+        <nombre> Game </nombre>
+        <num_parcelas> 2 </num_parcelas>
+        <metros_cuadrados> 216 </metros_cuadrados>
+        <encargado>
+            <nombre> Fernando </nombre>
+            <apellidos> Gutierrez de Garcia </apellidos>
+            <telefono> 955922147 </telefono>
+            <NSS> 14681654161246 </NSS>
+        </encargado>
+    </tienda>
+
+
+    <tienda>
+        <nombre> Srpingfield </nombre>
+        <num_parcelas> 3 </num_parcelas>
+        <metros_cuadrados> 360 </metros_cuadrados>
+        <encargado>
+            <nombre> Marcos </nombre>
+            <apellidos> Ramirez Vazquez </apellidos>
+            <telefono> 955926127 </telefono>
+            <NSS> 14681054621346 </NSS>
+        </encargado>
+    </tienda>
+
+
+    <tienda>
+        <nombre> Mercadona </nombre>
+        <num_parcelas> 6 </num_parcelas>
+        <metros_cuadrados> 716 </metros_cuadrados>
+        <encargado>
+            <nombre> Mario </nombre>
+            <apellidos> Gomez Garcia </apellidos>
+            <telefono> 954925147 </telefono>
+            <NSS> 14681056265346 </NSS>
+        </encargado>
+    </tienda>
+
+
+    <tienda>
+        <nombre> Dia </nombre>
+        <num_parcelas> 1 </num_parcelas>
+        <metros_cuadrados> 136 </metros_cuadrados>
+        <encargado>
+            <nombre> Juan Carlos </nombre>
+            <apellidos> Marquez Ramirez </apellidos>
+            <telefono> 954995147 </telefono>
+            <NSS> 14681054745346 </NSS>
+        </encargado>
+    </tienda>
+
+
+    <tienda>
+        <nombre> Gimnasio Paco </nombre>
+        <num_parcelas> 3 </num_parcelas>
+        <metros_cuadrados> 316 </metros_cuadrados>
+        <encargado>
+            <nombre> Paco </nombre>
+            <apellidos> Burgos Garcia </apellidos>
+            <telefono> 954926147 </telefono>
+            <NSS> 14681054165346 </NSS>
+        </encargado>
+    </tienda>
+
+
+    <tienda>
+        <nombre> Norauto </nombre>
+        <num_parcelas> 9 </num_parcelas>
+        <metros_cuadrados> 995 </metros_cuadrados>
+        <encargado>
+            <nombre> Sergio </nombre>
+            <apellidos> Perez de Carmona </apellidos>
+            <telefono> 954912147 </telefono>
+            <NSS> 14681053265346 </NSS>
+        </encargado>
+    </tienda>
+
+
+</tiendas_cc>

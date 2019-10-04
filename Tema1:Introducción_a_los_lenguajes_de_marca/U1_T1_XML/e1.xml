@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<libro titulo="La bestia de Paris" editorial="Anaya" autor="Manuel Fuentes" num_pag="245"> 
+   <capitulos>
+       <capitulo numero="0">
+           <nombre> Indice</nombre>
+           <pag_inicio> 3</pag_inicio>
+           <pag_final> 5 </pag_final>
+       </capitulo>
+       <capitulo numero="1">
+            <nombre> Una bestia en Paris</nombre>
+            <pag_inicio> 6</pag_inicio>
+            <pag_final> 15 </pag_final>
+        </capitulo>
+        <capitulo numero="2">
+            <nombre> Matando por la ciudad</nombre>
+            <pag_inicio> 16</pag_inicio>
+            <pag_final> 56 </pag_final>
+        </capitulo>
+        <capitulo numero="3">
+            <nombre> La bestia es vista</nombre>
+            <pag_inicio> 57</pag_inicio>
+            <pag_final> 111 </pag_final>
+        </capitulo>
+        <capitulo numero="4">
+            <nombre> Casi capturan a la bestia</nombre>
+            <pag_inicio> 112</pag_inicio>
+            <pag_final> 162 </pag_final>
+        </capitulo>
+        <capitulo numero="5">
+            <nombre> Revueltas en Paris</nombre>
+            <pag_inicio> 163</pag_inicio>
+            <pag_final> 195 </pag_final>
+        </capitulo>
+        <capitulo numero="6">
+            <nombre> El final de la bestia</nombre>
+            <pag_inicio> 196</pag_inicio>
+            <pag_final> 243 </pag_final>
+        </capitulo>
+        <capitulo numero="7">
+            <nombre> Agradecimientos</nombre>
+            <pag_inicio> 244</pag_inicio>
+            <pag_final> 245 </pag_final>
+        </capitulo>
+   </capitulos>
+</libro>
+
+
+
+
+
+

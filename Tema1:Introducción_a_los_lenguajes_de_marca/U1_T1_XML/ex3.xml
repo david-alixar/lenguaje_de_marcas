@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<concesionario>
+    <marcas>
+        <marca>
+            <nombre> Citroen </nombre>
+            <pais> Francia </pais>
+            <coches>
+                <coche>
+                    <matricula> 2145 KLZ </matricula>
+                    <año_matricula> 2018</año_matricula>
+                    <modelo> C3 </modelo>
+                    <num_plazas> 5 </num_plazas>
+                    <cilindrada> 1.2 </cilindrada>
+                </coche>
+                <coche>
+                    <matricula> 2145 KMZ </matricula>
+                    <año_matricula> 2019</año_matricula>
+                    <modelo> Berlingo XL </modelo>
+                    <num_plazas> 7 </num_plazas>
+                    <cilindrada> 1.5 </cilindrada>
+                </coche>
+            </coches>
+        </marca>
+
+        <marca>
+            <nombre> Peugeot </nombre>
+            <pais> Francia </pais>
+            <coches>
+                <coche>
+                    <matricula> 2145 LBZ </matricula>
+                    <año_matricula> 2019</año_matricula>
+                    <modelo> 308 </modelo>
+                    <num_plazas> 5 </num_plazas>
+                    <cilindrada> 1.2 </cilindrada>
+                </coche>
+                <coche>
+                    <matricula> 2145 KLM </matricula>
+                    <año_matricula> 2018</año_matricula>
+                    <modelo> 208 </modelo>
+                    <num_plazas> 5 </num_plazas>
+                    <cilindrada> 1.2 </cilindrada>
+                </coche>
+            </coches>
+        </marca>
+
+        <marca>
+            <nombre> Seat </nombre>
+            <pais> España/Alemania </pais>
+            <coches>
+                <coche>
+                    <matricula> 2945 KZZ </matricula>
+                    <año_matricula> 2019</año_matricula>
+                    <modelo> Ibiza </modelo>
+                    <num_plazas> 5 </num_plazas>
+                    <cilindrada> 1.0 </cilindrada>
+                </coche>
+                <coche>
+                    <matricula> 9541 JZZ </matricula>
+                    <año_matricula> 2017</año_matricula>
+                    <modelo> Leon </modelo>
+                    <num_plazas> 5 </num_plazas>
+                    <cilindrada> 1.6 </cilindrada>
+                </coche>
+            </coches>
+        </marca>
+
+        <marca>
+            <nombre> Ford </nombre>
+            <pais> EE.UU. </pais>
+            <coches>
+                <coche>
+                    <matricula> 4563 KJR </matricula>
+                    <año_matricula> 2018</año_matricula>
+                    <modelo> Fiesta </modelo>
+                    <num_plazas> 5 </num_plazas>
+                    <cilindrada> 1.5 </cilindrada>
+                </coche>
+                <coche>
+                    <matricula> 1245 LBC </matricula>
+                    <año_matricula> 2019</año_matricula>
+                    <modelo> Tourneo Connect </modelo>
+                    <num_plazas> 7 </num_plazas>
+                    <cilindrada> 2.0 </cilindrada>
+                </coche>
+            </coches>
+        </marca>
+
+        <marca>
+            <nombre> Opel </nombre>
+            <pais> Alemania/Francia </pais>
+            <coches>
+                <coche>
+                    <matricula> 6145 KVZ </matricula>
+                    <año_matricula> 2019</año_matricula>
+                    <modelo> Adam </modelo>
+                    <num_plazas> 4 </num_plazas>
+                    <cilindrada> 1.4 </cilindrada>
+                </coche>
+                <coche>
+                    <matricula> 2125 KZY </matricula>
+                    <año_matricula> 2019</año_matricula>
+                    <modelo> Combo XL </modelo>
+                    <num_plazas> 7 </num_plazas>
+                    <cilindrada> 1.5 </cilindrada>
+                </coche>
+            </coches>
+        </marca>
+
+    </marcas>
+</concesionario>
