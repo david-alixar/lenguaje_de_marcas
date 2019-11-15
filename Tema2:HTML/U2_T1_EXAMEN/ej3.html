@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IES Alixar Login</title>
+</head>
+
+<body>
+    <h1 style="background: green; text-align:center">IES Alixar Login</h1>
+
+    <form>
+        <table>
+            <tr>
+                <td><label for="usuario"> Usuario:</label></td>
+                <td><input type="text" for="usuario" /></td>
+            </tr>
+            <tr>
+                <td><label for="password"> Password:</label></td>
+                <td><input type="text" for="password" /></td>
+            </tr>
+            <tr>
+                <td><label for="fecha nacimiento"> Fecha de Nacimiento:</label></td>
+                <td><input type="number" for="fecha nacimiento" /></td>
+            </tr>
+            <tr>
+                <td><label for="curso matriculacion"> Curso de Matriculación</label></td>
+                <td>
+                    <select name="Curso de Matriculación">
+                        <option>Primero Daw1</option>
+                        <option>Segundo Daw2</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="role"> Role</label></td>
+                <td>
+                    <ul>
+                        <li><input type="radio" name="role"> Estudiante</li>
+                        <li><input type="radio" name="role"> Profesor</li>
+                        <li><input type="radio" name="role"> Apoyo</li>
+                        <li><input type="radio" name="role"> Staff</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="forma comunicacion"> Forma de Comunicación</label></td>
+                <td>
+                    <ul>
+                        <li><input type="checkbox" name="forma comunicacion"> Mail</li>
+                        <li><input type="checkbox" name="forma comunicacion"> Teléfono</li>
+                        <li><input type="checkbox" name="forma comunicacion"> Correo ordinario</li>
+                    </ul>
+                </td>
+            </tr>
+            <table>
+                <p>
+                    <input type="submit" value="Enviar" />
+                    <input type="submit" value="Borrar" />
+                </p>
+    </form>
+
+
+</body>
+
+</html>
