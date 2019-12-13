@@ -3,13 +3,64 @@
 }
 
 .container {
-    background-color: white;
     width: 80%;
-    height: 600px;
-    margin: 100px auto;
-    position: relative;
+    margin: 10px auto;
+    margin-top: 3%;
 }
+header nav {
+    background-color: black;
+    color: white;
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 0.5rem;
+}
+header nav div {
+    display: inline-block;
+    width: 15%;
+    padding: 5px;
+           
+}
+header h1 {
+    text-align: center;
+}
+#nav2 {
+    background-color: black;
+    color: white;
+    width: 15%;
+    height: 500px;
+    float: left;
+    margin-right: 4%;
+    padding: 5px;
+}
+#nav2 div{
+    margin-bottom: 20px;
+}
+.foto {
+    float: left;
+    width: 27%;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 1rem;
+    margin-bottom: 1rem;   
 
+}
 img {
-    width:20%;
+    width:45%;
+    margin-top: 15%;
+}
+.texto {
+    float: left;
+    text-align: center;
+    width: 27%;
+}
+footer {
+    background-color: rgb(177, 177, 177);margin: 10px auto;
+    text-align: center;
+    padding: 1rem;
+    clear: left;
+}
+a:visited {
+    color: grey;
 }

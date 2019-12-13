@@ -1,0 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+nav{
+    background-color: blue;
+    color: pink
+    display inline block;
+}
