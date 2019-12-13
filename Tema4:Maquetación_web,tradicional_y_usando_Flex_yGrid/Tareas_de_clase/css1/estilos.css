@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: white;
+    width: 80%;
+    height: 600px;
+    margin: 100px auto;
+    position: relative;
+}
+
+img {
+    width:20%;
+}
