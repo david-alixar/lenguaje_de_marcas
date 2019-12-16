@@ -2,7 +2,68 @@
     box-sizing: border-box;
 }
 nav{
-    background-color: blue;
-    color: pink
-    display inline block;
+    background-color: rgb(5, 5, 109);
+    color: pink;
+    position: sticky; 
+    top: 0;
+    z-index: 4;
+    width: 80%;
+    margin: 10px auto;
+}
+nav div{
+    display: inline-block;
+    padding: 5px;
+}
+.container {
+    width: 80%;
+    margin: 10px auto;
+    margin-top: 3%;
+}
+header {
+    position: relative;
+}
+
+aside {
+    background-color: rgb(5, 5, 109);
+    color: pink;
+    position: absolute;
+    width: 25%;
+    top: 30%;
+    right: 10%;
+    padding: 10px;
+    margin-left: 5%;
+    text-align: center;
+}
+#compra {
+    background-color: pink;
+    width: 40%;
+    margin: 0px auto;
+}
+.image img{
+    width: 100%;
+    opacity: 0.5;    
+}
+main h1{
+    text-align: center;
+    color: rgb(5, 5, 109); 
+}
+
+.cards {
+    width: 70%;
+    margin: 0px auto;
+}
+.card:nth-child(2){
+    border-top: 2px solid rgb(240, 168, 180);
+    border-bottom: 2px solid rgb(240, 168, 180);
+    
+}
+.card{
+    display: inline-block;
+    width: 25%;
+    margin-right: 7%;
+
+}
+
+.card img {
+    width: 100%;
 }
