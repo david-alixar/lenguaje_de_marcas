@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+.container{
+    position: relative;
+}
+#principal{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: 0;
+}
+    
+.ex_pr{
+    float: left;
+    width: 40%;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 0.5%;
+    padding-bottom: 4%;
+    z-index: 3;
+    opacity: 0.8;
+    background-color: white;
+}
+#foto_reloj{
+    width: 10%;
+    height: 10%;
+    margin-top: 0.5rem;
+}
+#div1_1{
+    margin-bottom: 1rem;
+}
+#div1_2{
+    width: 40%;
+    float: left;
+}
+#div1_3{
+    width: 40%;
+    float: left;
+}
+#div1_3 ul{
+    margin-top: 0.5rem;
+}
+.fotoytexto{
+    overflow-y: auto;
+}
+.Hakima_castro{
+    float: right;
+    width: 50%;
+    margin-top: 100px;
+    padding-bottom: 0.5%;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    z-index: 3;
+    
+}
+.div2_1{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+#foto_ejecutiva{
+    width: 10%;
+    height: 10%;
+    float: left;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+#foto_im{
+    width: 10%;
+    height: 10%;
+    float: right;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+.div2_2{
+    float: left;
+    width: 65%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+#texto{
+
+    border-radius: 7px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-left: 4%;
+    padding-right: 4%;
+    background-color: turquoise;
+    margin-top: 1rem;
+}
+.escriba_consulta{
+    margin-top: 1rem;
+    height: 200px;
+    background-color: rgb(219, 217, 217);
+    position: relative;
+}
+#iniciar_chat{
+    position: absolute;
+    width: 10%;
+    right: 10px;
+    bottom: 5px;
+}
+
+.cert_dig{
+    clear: left;
+    width: 40%;
+    margin-left: 20px;
+    margin-top: 15px;
+    padding-bottom: 3%;
+    z-index: 3;
+    opacity: 0.8;
+    background-color: white;
+}
