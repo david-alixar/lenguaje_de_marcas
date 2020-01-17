@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    border: 1px solid black;
+    
 }
 .container{
     position: relative;
@@ -10,38 +10,56 @@
     top:0px;
     left:0px;
     width: 100%;
-    z-index: 0;
+    z-index: -5;
 }
     
 .ex_pr{
     float: left;
     width: 40%;
+    margin-top: 0.5rem;;
     margin-left: 20px;
     margin-bottom: 15px;
+    padding-left: 1.25rem;
     padding-bottom: 0.5%;
-    padding-bottom: 4%;
     z-index: 3;
     opacity: 0.8;
     background-color: white;
+    height: 300px;
+}
+#i{
+    color:cyan;
+    float: right;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+#punto{
+    color:cyan;
+}
+#EXECUTIVE{
+    float: left;
+    border-bottom: 5px solid cyan;
+    width: 30%;
 }
 #foto_reloj{
-    width: 10%;
-    height: 10%;
-    margin-top: 0.5rem;
+    width: 20%;
+    height: 20%;
 }
 #div1_1{
     margin-bottom: 1rem;
+    clear: both;
 }
 #div1_2{
     width: 40%;
     float: left;
+    border-right: 1px solid black;
+    height: 25%
 }
 #div1_3{
     width: 40%;
     float: left;
-}
-#div1_3 ul{
-    margin-top: 0.5rem;
+    margin-left: 1rem;
+    border-right: 1px solid black;
+    height: 15%
 }
 .fotoytexto{
     overflow-y: auto;
@@ -54,6 +72,7 @@
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
     z-index: 3;
+    background-color: white;
     
 }
 .div2_1{
@@ -81,19 +100,26 @@
     width: 65%;
     margin-top: 1rem;
     margin-left: 1rem;
+    color: gray;
+}
+#negro{
+    color: black;
 }
 #texto{
-
     border-radius: 7px;
     margin-left: 30px;
     margin-right: 30px;
+    padding-top: 1%;
     padding-left: 4%;
     padding-right: 4%;
+    padding-bottom: 1%;
     background-color: turquoise;
     margin-top: 1rem;
 }
 .escriba_consulta{
     margin-top: 1rem;
+    padding-left: 4%;
+    padding-right: 4%;
     height: 200px;
     background-color: rgb(219, 217, 217);
     position: relative;
@@ -101,17 +127,64 @@
 #iniciar_chat{
     position: absolute;
     width: 10%;
-    right: 10px;
-    bottom: 5px;
+    right: 60px;
+    bottom: 10px;
 }
-
+.iniciar_chat{
+    background-color: gray;
+    color: white;
+    border-radius: 3px;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+}
 .cert_dig{
     clear: left;
     width: 40%;
+    height: 300px;
+    margin-top: 0.5rem;
     margin-left: 20px;
-    margin-top: 15px;
-    padding-bottom: 3%;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1.25rem;
     z-index: 3;
     opacity: 0.8;
     background-color: white;
+}
+#foto_reloj2{
+    width: 100%;
+    height: 50%;
+}
+.meses{
+    width: 40%;
+    float: left;
+    border-right: 1px solid black;
+    height: 25%
+}
+.online{
+    margin-left: 1rem;
+    width: 40%;
+    float: left;
+    border-right: 1px solid black;
+    height: 25%
+}
+#CERTIFICADOS{
+    border-bottom: 5px solid cyan;
+    width: 30%;
+    float:left;
+}
+.div3_1{
+    overflow-y:auto;
+}
+.div3_2{
+    margin-bottom: 1rem;
+}
+#foto_meses{
+    float: left;
+    width: 25%;
+}
+#texto_meses{
+    float: left;
+    width: 75%;
+    padding-top: 1rem;
+
 }
