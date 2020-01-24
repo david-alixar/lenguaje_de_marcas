@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+
+}
+
+#header {
+    float: left;
+}
+
+#centum {
+    float: left;
+    width: 8%;
+}
+
+#punto {
+    color: green;
+}
+
+#ittime {
+    float: left;
+    width: 45%;
+    border-left: 1px solid gray;
+}
+
+.contacto {
+    float: right;
+    margin-left: 15%;
+    width: 35%;
+}
+
+#contacto1 {
+    float: left;
+    width: 45%;
+    padding-top: 2rem;
+}
+
+#foto_contacto1 {
+    float: left;
+    width: 45;
+    margin-left: 5%;
+}
+
+#correo {
+    float: left;
+    width: 35%;
+    margin-right: 5%;
+}
+
+#foto_contacto2 {
+    border-left: 1px solid black;
+    float: left;
+    width: 5%;
+
+}
+
+#telefono {
+    float: left;
+    width: 90%;
+}
+
+#contacto2 {
+    float: right;
+    width: 50%;
+    padding-top: 2rem;
+}
+
+.barra_negra {
+    clear: left;
+    background-color: rgb(31, 29, 29);
+    padding-left: 3px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2 rem;
+}
+
+.home {
+    float: left;
+    
+
+}
+
+.home2 {
+    float: left;
+    height: 9%;
+    padding-right: 1%;
+    border-right: 1px solid white;
+    color: white;
+    
+}
+
+.search {
+    float: rigth;
+    height: 20%;
+}
+#foto_castillo{
+    position: relative;
+    z-index: -5;
+    margin-top: 2 rem;
+}
+#this_caption{
+    position: absolute;
+    float: left;
+    width: 30%;
+    z-index: 3;
+    opacity: 0.8;
+    background-color: gray;
+    color: white;
+    bottom: 100px;
+    left: 20px;
+    padding-left: 15px;
+}
+#abre{
+position:absolute;
+float: right;
+width: 1%;
+border-right: 1px solid white;
+background-color: gray;
+left: 1980px;
+bottom: 100px;
+color:white;
+padding-left: 7px;
+}
+#cierra{
+position:absolute;
+float: right;
+width: 1%;
+background-color: gray;
+left: 2005px;
+bottom: 100px;
+color:white;
+padding-left: 7px;
+}
+.footer{
+    float:left;
+    padding: 0.1rem;
+    
+}
+
+
+#foto_tele{
+    float:left;
+    padding-right: 2%;
+    width: 2%;
+}
+#textofresh{
+    float:left;
+    width: 28%;    
+}
+#foto_easy{
+    float:left;
+    padding-right: 2%;
+    width: 2%;
+}
+#textoeasy{
+    float:left;
+    width: 28%;    
+}
+#foto_fully{
+    float:left;
+    padding-right: 2%;
+    width: 2%;
+}
+#textofully{
+    float:left;
+    width: 28%;    
+}
