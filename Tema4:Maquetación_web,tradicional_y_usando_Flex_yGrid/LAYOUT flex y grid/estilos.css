@@ -1,6 +1,10 @@
 *{
     box-sizing: border-box;
 }
+body{
+  background-image: url("./principal.jpg");
+  background-size: cover;
+}
 .container{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -14,6 +18,12 @@
     grid-column-end:2;
     grid-row-start: 1;
     grid-row-end: 3; 
+    background-color: white;
+    padding: 1rem;
+    opacity: 0.8;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 50px 200px;
   }
   .Hakima_castro{
     grid-column-start:2;
@@ -24,20 +34,68 @@
     grid-template-columns: 100%;
     grid-template-rows: 50px 100px 150px 250px;
     grid-row-gap: 1rem;
+    background-color: white;
   }
   .cert_dig{
     grid-column-start:1;
     grid-column-end:2;
     grid-row-start: 3;
     grid-row-end: 4; 
+    background-color: white;
+    padding: 1rem;
+    opacity: 0.8;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 50px 200px;
   }
   img{
       width : 50%;
   }
-
-  .container > div{
-      padding: 1rem; 
-      background-color: gray;  
+  #EXECUTIVE{
+   float:left;
+    width: 20%;
+    border-bottom: 7px solid cyan;
+    
+  }
+  #i{
+    color:cyan;
+    float: right;
+    
+    width: 25%;
+  }
+  .ex_pr_i{
+    justify-content: space-between;
+    grid-column-start:1;
+    grid-column-end:3;
+    grid-row-start: 1;
+    grid-row-end: 2; 
+  }
+  #div1_1{
+    grid-column-start:1;
+    grid-column-end:3;
+    grid-row-start: 2;
+    grid-row-end: 3; 
+    padding-top: 1rem;
+  }
+  #foto_reloj{
+    float:left;
+    width: 10%;
+  }
+  #texto_meses{
+    float:left;
+    width: 20%;
+  }
+  .div1_2{
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start: 3;
+    grid-row-end: 4; 
+  }
+  .div1_3{
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start: 3;
+    grid-row-end: 4; 
   }
   .div2_1{
     grid-column-start:1;
@@ -59,18 +117,21 @@
     display:flex;
     padding-left: 3rem;
     padding-right: 3rem;
+    padding: 1rem;
   }
   .texto{
     grid-column-start:1;
     grid-column-end:2;
     grid-row-start: 3;
     grid-row-end: 4; 
+    padding: 1rem;
   }
   .escriba_consulta{
     grid-column-start:1;
     grid-column-end:2;
     grid-row-start: 4;
     grid-row-end: 5; 
+    padding: 1rem;
   }
   .foto_ejecutiva{
       width: 20%;
@@ -78,10 +139,12 @@
   #foto_ejecutiva{
     width: 70%;
     height: 100px;
+    
   }
   .div2_2{
       padding: 0.5rem;
       width: 60%;
+      padding: 1rem;
   }
   #im{
       width: 20%;
@@ -93,10 +156,14 @@
  .div2_1 img{
     height: 20px;
     width: 20px;
+    
  }
   #texto{
     background-color: cyan;
     padding : 1rem 3rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border-radius: 7px;
   }
   .escriba_consulta{
     position: relative;
@@ -108,11 +175,49 @@
   }
   #iniciar_chat{
     position: absolute;
-    right: 10px;
-    bottom: 10px;
+    right: 25px;
+    bottom: 25px;
   }
   .iniciar_chat{
     background-color: gray;
     color: white;
     padding: 0.5rem;
+  }
+  .div3_1{
+    justify-content: space-between;
+    grid-column-start:1;
+    grid-column-end:3;
+    grid-row-start: 1;
+    grid-row-end: 2; 
+  }
+  .div3_2{
+    grid-column-start:1;
+    grid-column-end:3;
+    grid-row-start: 2;
+    grid-row-end: 3; 
+    padding: 1rem;
+  }
+  .meses{
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start: 3;
+    grid-row-end: 4; 
+  }
+  .online{
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start: 3;
+    grid-row-end: 4; 
+  }
+  #punto{
+    color: cyan;
+  }
+  #CERTIFICADOS{
+    float:left;
+    width: 20%;
+    border-bottom: 7px solid cyan;
+  }
+  #foto_reloj2{
+    float:left;
+    width: 10%;
   }
