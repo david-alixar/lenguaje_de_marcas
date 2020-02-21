@@ -23,7 +23,7 @@ body{
     opacity: 0.8;
     display:grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 100px 50px 200px;
+    grid-template-rows: 100px 100px 200px;
   }
   .Hakima_castro{
     grid-column-start:2;
@@ -46,7 +46,7 @@ body{
     opacity: 0.8;
     display:grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 100px 50px 200px;
+    grid-template-rows: 100px 100px 100px;
   }
   img{
       width : 50%;
@@ -75,7 +75,7 @@ body{
     grid-column-end:3;
     grid-row-start: 2;
     grid-row-end: 3; 
-    padding-top: 1rem;
+    padding-top: 2rem;
   }
   #foto_reloj{
     float:left;
@@ -85,17 +85,21 @@ body{
     float:left;
     width: 20%;
   }
-  .div1_2{
+  #div1_2{
     grid-column-start:1;
     grid-column-end:2;
     grid-row-start: 3;
     grid-row-end: 4; 
+    border-right: 1.75px solid black;
+    height: 100px;
   }
-  .div1_3{
+  #div1_3{
     grid-column-start:2;
     grid-column-end:3;
     grid-row-start: 3;
     grid-row-end: 4; 
+    border-right: 1.75px solid black;
+    height: 50px;
   }
   .div2_1{
     grid-column-start:1;
@@ -119,12 +123,12 @@ body{
     padding-right: 3rem;
     padding: 1rem;
   }
-  .texto{
+  #texto{
     grid-column-start:1;
     grid-column-end:2;
     grid-row-start: 3;
     grid-row-end: 4; 
-    padding: 1rem;
+    text-align: center;
   }
   .escriba_consulta{
     grid-column-start:1;
@@ -142,9 +146,8 @@ body{
     
   }
   .div2_2{
-      padding: 0.5rem;
+    padding-top: 0.5rem;
       width: 60%;
-      padding: 1rem;
   }
   #im{
       width: 20%;
@@ -159,19 +162,23 @@ body{
     
  }
   #texto{
-    background-color: cyan;
-    padding : 1rem 3rem;
+    background-color: rgb(178, 198, 224);
+    padding : 1rem 2rem;
     margin-left: 1rem;
     margin-top: 1rem;
     border-radius: 7px;
+    margin-right: 3rem;
+    margin-left: 3rem;
   }
   .escriba_consulta{
     position: relative;
+    margin-right: 2rem;
+    margin-left: 2rem;
   }
   #escribe{
     width: 100%;
     height: 100%;
-    background-color: rgb(189, 186, 186);
+    background-color: rgb(236, 232, 232);
   }
   #iniciar_chat{
     position: absolute;
@@ -179,7 +186,7 @@ body{
     bottom: 25px;
   }
   .iniciar_chat{
-    background-color: gray;
+    background-color: rgb(75, 73, 73);
     color: white;
     padding: 0.5rem;
   }
@@ -195,7 +202,7 @@ body{
     grid-column-end:3;
     grid-row-start: 2;
     grid-row-end: 3; 
-    padding: 1rem;
+    padding-top: 2rem;
   }
   .meses{
     grid-column-start:1;
@@ -208,6 +215,9 @@ body{
     grid-column-end:3;
     grid-row-start: 3;
     grid-row-end: 4; 
+    border-right: 1.75px solid black;
+    border-left: 1.75px solid black;
+    height: 100px;
   }
   #punto{
     color: cyan;
