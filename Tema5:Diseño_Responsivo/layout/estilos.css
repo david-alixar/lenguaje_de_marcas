@@ -2,7 +2,8 @@
     box-sizing: border-box;
 }
 .container{
-    background-color: rgb(14, 51, 119);
+    background-color: rgb(39, 61, 70);
+    font-size: 3vw;
 }
 img{
     width: 50%;
@@ -14,11 +15,17 @@ img{
     margin-right: 4rem;
     margin-bottom: 2rem;
 }
+#grafpedia{
+    padding-top: 0.3rem;
+}
 #input{
     padding-top: 0.5rem;
 }
 .menu{
     display: none;
+}
+.menu_fotos{
+    border-radius: 2%;
 }
 .vector{
     background-color: white;
@@ -38,10 +45,110 @@ img{
 .boton{
     color:rgb(155, 151, 151);
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem 4rem;
 }
 button{
-    background-color: cyan;
+    background-color: rgb(90, 130, 153);
+    margin-top: 1rem;
+    border-radius: 2%;
+}
+.contenedores{
+    margin: 1rem 4rem;
+    display: inline-block;
+}
+.services{
+    height: 250px;
+    margin-bottom: 1rem;
+    background-color: rgb(143, 178, 194);
+    border-radius: 2%;
+}
+#lista{
+    padding: 0rem 1rem;
+}
+#services{
+    background-color: rgb(91, 131, 141);
+    display: flex;
+    margin-bottom: 1rem;
+}
+#services > div > img{
+    height: 15px;
+}
+.products{
+    height: 500px;
+    margin-bottom: 1rem;
+    text-align: center;
+    background-color: rgb(143, 178, 194);
+    border-radius: 2%;
+}
+.products img{
+    height: 70px;
+    width: 35%;
+
+}
+#products{
+    background-color:rgb(91, 131, 141);
+    display: flex;
+    margin-bottom: 1rem;
+}
+#products > div > img{
+    height: 15px;
+}
+.about{
+    height: 300px;
+    background-color: rgb(143, 178, 194);
+}
+.blog{
+    margin: 1rem 4rem;
+    display: inline-block;
+    font-size: 1.5vw;
+}
+#about{
+    background-color: rgb(91, 131, 141);
+    margin-bottom: 1rem;
+}
+#lorem{
+    padding: 0rem 1rem;
+}
+#blog{
+    background-color: rgb(91, 131, 141);
+    text-align: left;
+}
+.create_light{
+    display: flex;
+    height: 200px;
+    background-color: rgb(143, 178, 194);
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+}
+#foto_create{
+    width: 40%;
+    padding-left: 5%;
+}
+#foto_create > img{
+    height: 150px;
+    width: 80%;
+}
+#create_light{
+    width: 50%;
+}
+.design{
+    display: flex;
+    height: 200px;
+    background-color: rgb(143, 178, 194);
+    padding-top: 1rem;
+}
+#foto_predictor{
+    width: 40%;
+    padding-left: 5%;
+}
+#foto_predictor > img{
+    height: 150px;
+    width: 80%;
+}
+#design{
+    width: 50%;
 }
 @media screen and(min-width:576px){
 
