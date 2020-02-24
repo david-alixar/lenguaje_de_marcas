@@ -59,10 +59,10 @@ button{
     display: inline-block;
 }
 .services{
-    height: 250px;
+    height: 275px;
     margin-bottom: 1rem;
     background-color: rgb(143, 178, 194);
-    border-radius: 2%;
+    border-radius: 0.5rem;
 }
 #lista{
     padding: 0rem 1rem;
@@ -71,6 +71,9 @@ button{
     background-color: rgb(91, 131, 141);
     display: flex;
     margin-bottom: 1rem;
+    padding: 0.3rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
 }
 #services > div > img{
     height: 15px;
