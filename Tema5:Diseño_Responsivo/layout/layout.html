@@ -9,10 +9,7 @@
     <link href="estilos.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
-    <link
-     rel="stylesheet"
-     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-   />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body>
@@ -24,12 +21,12 @@
         </div>
         <div class="menu_fotos">
             <div class="menu">
-                <h4> Home</h4>
-                <h4> About</h4>
-                <h4> Services</h4>
-                <h4> Products</h4>
-                <h4> Blog</h4>
-                <h4> Contact</h4>
+                <div > Home &nbsp; &nbsp; &nbsp;</div>
+                <div> About &nbsp; &nbsp; &nbsp;</div>
+                <div> Services &nbsp; &nbsp; &nbsp;</div>
+                <div> Products &nbsp; &nbsp; &nbsp;</div>
+                <div> Blog &nbsp; &nbsp; &nbsp;</div>
+                <div> Contact </div>
             </div>
             <div class="vector">
                 <strong> 500+ Vector Files </strong> <br> Get a VIP account and download them all
@@ -41,30 +38,31 @@
                 <div> <img src="./foto4.png"> </div>
             </div>
         </div>
-        <div class="boton">
-            <div> Get lots of vectors, icons, web layout, brushes, textures and gradients >></div>
-            <div> <button type="button"> Apply for a VIP account</button></div>
-        </div>
         <div class="contenedores">
+            <div class="boton">
+                <div id="texto_boton"> Get lots of vectors, icons, web layout, brushes, textures and gradients »</div>
+                <div> <button type="button"> Apply for a VIP account</button></div>
+            </div>
+
             <div class="services">
                 <div id="services">
                     <div> <img src="./cohete.jpg"> </div>
-                    <div>  Services </div>
-                </div>    
+                    <div> Services </div>
+                </div>
                 <div id="lista">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorum, distinctio eum consequuntur
                     odio explicabo iste laudantium, alias quod minima id expedita ab! Impedit id blanditiis delectus
                     provident, facere aut.
-                    <ul>
-                        <li> Web design >> </li>
-                        <li> Print design >> </li>
-                        <li> Log design >> </li>
-                        <li> Icon design >> </li>
-                    </ul>
+                    <ul> <strong>
+                            <li> Web design » </li>
+                            <li> Print design » </li>
+                            <li> Log design » </li>
+                            <li> Icon design » </li>
+                        </strong> </ul>
                 </div>
             </div>
             <div class="products">
-                <div id="products"> 
+                <div id="products">
                     <div> <img src="./candado.jpg"> </div>
                     <div> Products </div>
                 </div>
@@ -76,19 +74,22 @@
                 <div> <img src="./foto6.png"> </div>
             </div>
             <div class="about">
-                <div id="about"> About us</div>
+                <div id="about">
+                    <div> <img src="./sobre.jpg"> </div>
+                    <div> About us</div>
+                </div>
                 <div id="lorem">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aperiam labore repellendus ratione?
-                Doloremque facere ratione, unde dolores, quae dicta incidunt explicabo placeat provident repudiandae
-                enim accusamus, quod porro eveniet. <br>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla facilis quod veritatis, molestiae dolore
-                architecto eius blanditiis beatae enim quibusdam tenetur laudantium consectetur saepe eligendi nihil
-                cumque numquam iusto? Itaque.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aperiam labore repellendus ratione?
+                    Doloremque facere ratione, unde dolores, quae dicta incidunt explicabo placeat provident repudiandae
+                    enim accusamus, quod porro eveniet. 
                 </div>
             </div>
         </div>
         <div class="blog">
-            <div id="blog"> Blog </div>
+            <div id="blog">
+                <div> <img src="./arroba.jpg"> </div>
+                <div> Blog </div>
+            </div>
             <div class="create_light">
                 <div id="foto_create"> <img src="light.jpeg"> </div>
                 <div id="create_light">
@@ -110,6 +111,20 @@
             </div>
         </div>
     </div>
+    <script>
+        $(function() {
+            //Captura del evento para mostrar u ocultar
+            $(".icon").click(function() {
+            $(".menu").toggle();
+            });
+            $(window).resize(function() {
+            var anchura = $(this).width();
+            if (anchura > 576) {
+                $(".menu").show();
+            }
+            });
+        });
+    </script>
 </body>
 
 </html>
