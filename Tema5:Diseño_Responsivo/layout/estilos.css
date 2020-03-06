@@ -30,13 +30,22 @@ img {
     padding-top: 0.7rem;
     margin-left: 1rem;
 }
+.icon:hover{
+    color:red;
+}
 
 #input {
     padding-top: 0.5rem;
 }
 
 .menu {
-    display: none;
+    color: green;
+    
+    padding-left: 4rem;
+    padding-bottom: 2rem;
+}
+.menu_item{
+    display:none;
 }
 
 .vector {
@@ -261,11 +270,12 @@ button {
 }
 
 @media screen and (min-width: 576px) {
-    .contenedores{
+    .contenedores {
         display: grid;
         grid-template-columns: 50%;
         grid-template-rows: 350px 350px;
     }
+
     .fotos {
         display: flex;
         flex-wrap: wrap;
@@ -275,9 +285,9 @@ button {
         width: 45%;
     }
 
-    .boton{
-        grid-column-start:2;
-        grid-column-end:3;
+    .boton {
+        grid-column-start: 2;
+        grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
         margin-top: 1rem;
@@ -285,8 +295,8 @@ button {
 
     .services {
         height: 300px;
-        grid-column-start:1;
-        grid-column-end:2;
+        grid-column-start: 1;
+        grid-column-end: 2;
         grid-row-start: 1;
         grid-row-end: 2;
         font-size: 1.75vw;
@@ -294,8 +304,8 @@ button {
 
     .products {
         height: 300px;
-        grid-column-start:1;
-        grid-column-end:2;
+        grid-column-start: 1;
+        grid-column-end: 2;
         grid-row-start: 2;
         grid-row-end: 3;
         display: flex;
@@ -307,33 +317,38 @@ button {
     #products {
         width: 100%;
     }
-    .products > div {
+
+    .products>div {
         width: 50%;
     }
 
     .about {
         height: 300px;
-        grid-column-start:2;
-        grid-column-end:3;
+        grid-column-start: 2;
+        grid-column-end: 3;
         grid-row-start: 2;
         grid-row-end: 3;
         margin-top: 1rem;
         margin-left: 0.5rem;
         font-size: 2.25vw;
     }
-    #about{
+
+    #about {
         padding-bottom: 0.7rem;
     }
-    .blog{
+
+    .blog {
         display: flex;
         flex-wrap: wrap;
     }
-    #blog{
+
+    #blog {
         width: 100%;
         margin-top: 1rem;
         justify-content: center;
     }
-    .create_light{
+
+    .create_light {
         width: 50%;
         height: 350px;
         margin-bottom: 4rem;
@@ -341,13 +356,16 @@ button {
         border-bottom-right-radius: 0;
         font-size: 1.8vw;
     }
-    #foto_create{
+
+    #foto_create {
         padding-top: 3rem;
     }
-    #foto_predictor{
+
+    #foto_predictor {
         padding-top: 3rem;
     }
-    .design{
+
+    .design {
         width: 50%;
         height: 350px;
         margin-bottom: 4rem;
@@ -358,26 +376,31 @@ button {
 }
 
 @media screen and (min-width: 992px) {
-    .icon{
-        display:none;
+    .icon {
+        display: none;
     }
-    .grafpedia{
+
+    .grafpedia {
         padding-left: 2rem;
     }
+
     .fotos {
         display: flex;
         flex-wrap: nowrap;
     }
 
-    .fotos> div {
+    .fotos>div {
         width: 95%;
     }
-    .products{
+
+    .products {
         height: 225px;
     }
-    .products > div {
+
+    .products>div {
         width: 33%;
     }
+
     .menu {
         display: flex;
         justify-content: stretch;
@@ -391,56 +414,71 @@ button {
         border-top-left-radius: 0.5rem;
         border-top-right-radius: 0.5rem;
     }
-    .vector{
+    
+
+    .vector {
         border-top-left-radius: 0;
         border-top-right-radius: 0;
     }
-    .contenedores{
+
+    .contenedores {
         display: flex;
         flex-wrap: wrap;
     }
-    .services{
+
+    .services {
         width: 30%;
         margin: 0;
         height: 500px;
     }
-    .products{
+
+    .products {
         width: 30%;
         margin: 0% 5%;
         height: 500px;
     }
-    .products img{
+
+    .products img {
         height: 100px;
-        width: 60%;
+        width: 80%;
     }
-    #products{
-        height: 50px;
+
+    #products {
+        height: 40px;
+        padding-top: 0.2rem;
+        font-size: 2vw;
     }
-    .about{
+
+    .about {
         width: 30%;
         margin: 0;
         height: 500px;
         font-size: 2vw;
     }
-    .boton{
+
+    .boton {
         justify-content: space-between;
         padding: 0;
         margin-bottom: 2rem;
         width: 100%;
     }
-    #texto_boton{
+
+    #texto_boton {
         width: 80%;
         font-size: 1.7vw;
         padding-top: 1rem;
     }
-    #blog{
+
+    #blog {
         justify-content: start;
     }
-    .create_light{
+
+    .create_light {
         height: 500px;
     }
-    .design{
+
+    .design {
         height: 500px;
     }
-    
+
 }

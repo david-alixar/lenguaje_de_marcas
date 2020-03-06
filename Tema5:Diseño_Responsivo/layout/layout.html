@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -21,12 +22,12 @@
         </div>
         <div class="menu_fotos">
             <div class="menu">
-                <div > Home &nbsp; &nbsp; &nbsp;</div>
-                <div> About &nbsp; &nbsp; &nbsp;</div>
-                <div> Services &nbsp; &nbsp; &nbsp;</div>
-                <div> Products &nbsp; &nbsp; &nbsp;</div>
-                <div> Blog &nbsp; &nbsp; &nbsp;</div>
-                <div> Contact </div>
+                <div class="menu_item" > Home &nbsp; &nbsp; &nbsp;</div>
+                <div class="menu_item" > About &nbsp; &nbsp; &nbsp;</div>
+                <div class="menu_item" > Services &nbsp; &nbsp; &nbsp;</div>
+                <div class="menu_item" > Products &nbsp; &nbsp; &nbsp;</div>
+                <div class="menu_item" > Blog &nbsp; &nbsp; &nbsp;</div>
+                <div class="menu_item" > Contact </div>
             </div>
             <div class="vector">
                 <strong> 500+ Vector Files </strong> <br> Get a VIP account and download them all
@@ -115,12 +116,12 @@
         $(function() {
             //Captura del evento para mostrar u ocultar
             $(".icon").click(function() {
-            $(".menu").toggle();
+            $(".menu_item").toggle();
             });
             $(window).resize(function() {
             var anchura = $(this).width();
-            if (anchura > 576) {
-                $(".menu").show();
+            if (anchura > 576 && anchura < 992) {
+                $(".menu_item").show();
             }
             });
         });
