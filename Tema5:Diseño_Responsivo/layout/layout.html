@@ -22,12 +22,12 @@
         </div>
         <div class="menu_fotos">
             <div class="menu">
-                <div class="menu_item" > Home &nbsp; &nbsp; &nbsp;</div>
-                <div class="menu_item" > About &nbsp; &nbsp; &nbsp;</div>
-                <div class="menu_item" > Services &nbsp; &nbsp; &nbsp;</div>
-                <div class="menu_item" > Products &nbsp; &nbsp; &nbsp;</div>
-                <div class="menu_item" > Blog &nbsp; &nbsp; &nbsp;</div>
-                <div class="menu_item" > Contact </div>
+                <div class="menu_item"> Home &nbsp; &nbsp; &nbsp;</div>
+                <div class="menu_item"> About &nbsp; &nbsp; &nbsp;</div>
+                <div class="menu_item"> Services &nbsp; &nbsp; &nbsp;</div>
+                <div class="menu_item"> Products &nbsp; &nbsp; &nbsp;</div>
+                <div class="menu_item"> Blog &nbsp; &nbsp; &nbsp;</div>
+                <div class="menu_item"> Contact </div>
             </div>
             <div class="vector">
                 <strong> 500+ Vector Files </strong> <br> Get a VIP account and download them all
@@ -82,7 +82,7 @@
                 <div id="lorem">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aperiam labore repellendus ratione?
                     Doloremque facere ratione, unde dolores, quae dicta incidunt explicabo placeat provident repudiandae
-                    enim accusamus, quod porro eveniet. 
+                    enim accusamus, quod porro eveniet.
                 </div>
             </div>
         </div>
@@ -113,28 +113,28 @@
         </div>
     </div>
     <script>
-        $(function() {
+        $(function () {
             //Captura del even para mostrar u ocultar
             var anchura = $(window).width();
-                if (anchura > 992) {
-                    $(".menu_item").show();
-                   
+            if (anchura > 992) {
+                $(".menu_item").show();
 
-                } else if (anchura <992) {  
-                    $(".menu_item").hide();
-                }
 
-            $(".icon").click(function() {
+            } else if (anchura < 992) {
+                $(".menu_item").hide();
+            }
+
+            $(".icon").click(function () {
                 $(".menu_item").toggle();
             });
 
-            $(window).resize(function() {
+            $(window).resize(function () {
                 var anchura = $(this).width();
                 if (anchura > 992) {
                     $(".menu_item").show();
-                   
 
-                } else if (anchura <992) {  
+
+                } else if (anchura < 992) {
                     $(".menu_item").hide();
                 }
             });

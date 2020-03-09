@@ -15,7 +15,7 @@ img {
 .grafpedia {
     display: flex;
     justify-content: space-between;
-    margin-right: 4rem;
+    margin-right: 2rem;
 }
 
 #grafpedia {
@@ -30,32 +30,34 @@ img {
     padding-top: 0.7rem;
     margin-left: 1rem;
 }
-.icon:hover{
-    color:red;
+
+.icon:hover {
+    color: white;
 }
 
 #input {
     padding-top: 0.5rem;
     width: 50%;
 }
-#input input{
+
+#input input {
     width: 100%;
 }
 
 .menu {
-    color: green;
-    
+    color: cyan;
     padding-left: 1rem;
     padding-bottom: 2rem;
 }
-.menu_item{
-    display:none;
+
+.menu_item {
+    display: none;
 }
 
 .vector {
     background-color: white;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     color: rgb(16, 59, 139);
     text-align: center;
     padding-top: 1rem;
@@ -66,8 +68,8 @@ img {
 
 .fotos {
     background-color: white;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     text-align: center;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
@@ -93,15 +95,16 @@ button {
     color: whitesmoke;
     font-weight: bold;
     padding: 0.5rem;
+    width: 100%;
 }
 
 .contenedores {
-    margin: 1rem 4rem;
+    margin: 1rem 2rem;
     display: inline-block;
 }
 
 .services {
-    height: 300px;
+    height: 225px;
     margin-bottom: 1rem;
     background-color: rgb(143, 178, 194);
     border-radius: 0.5rem;
@@ -202,7 +205,7 @@ button {
 }
 
 .blog {
-    margin: 1rem 4rem;
+    margin: 1rem 2rem;
     display: inline-block;
     font-size: 2vw;
     border-radius: 0.5rem;
@@ -218,6 +221,7 @@ button {
     font-style: italic;
     color: rgb(211, 241, 248);
     font-weight: bold;
+    justify-content: center;
 }
 
 #blog>div>img {
@@ -298,7 +302,7 @@ button {
     }
 
     .services {
-        height: 300px;
+        height: 275px;
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 1;
@@ -349,7 +353,6 @@ button {
     #blog {
         width: 100%;
         margin-top: 1rem;
-        justify-content: center;
     }
 
     .create_light {
@@ -386,11 +389,14 @@ button {
 
     .grafpedia {
         padding-left: 2rem;
+        margin-right: 4rem;
     }
 
     .fotos {
         display: flex;
         flex-wrap: nowrap;
+        margin-left: 4rem;
+        margin-right: 4rem;
     }
 
     .fotos>div {
@@ -408,7 +414,7 @@ button {
     .menu {
         display: flex;
         justify-content: stretch;
-        background-color: rgba(64, 111, 165, 0.774);
+        background-color: rgba(107, 176, 197, 0.774);
         font-size: 1.8vw;
         color: white;
         padding: 1rem 2rem;
@@ -419,28 +425,32 @@ button {
         border-top-right-radius: 0.5rem;
         margin-top: 1rem;
     }
-    
+
 
     .vector {
         border-top-left-radius: 0;
         border-top-right-radius: 0;
+        margin-left: 4rem;
+        margin-right: 4rem;
     }
 
     .contenedores {
         display: flex;
         flex-wrap: wrap;
+        margin-left: 4rem;
+        margin-right: 4rem;
     }
 
     .services {
         width: 30%;
         margin: 0;
-        height: 500px;
+        height: 400px;
     }
 
     .products {
         width: 30%;
         margin: 0% 5%;
-        height: 500px;
+        height: 400px;
     }
 
     .products img {
@@ -457,8 +467,8 @@ button {
     .about {
         width: 30%;
         margin: 0;
-        height: 500px;
-        font-size: 2vw;
+        height: 400px;
+        font-size: 1.95vw;
     }
 
     .boton {
@@ -474,16 +484,29 @@ button {
         padding-top: 1rem;
     }
 
+    .blog {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
     #blog {
         justify-content: start;
     }
 
     .create_light {
-        height: 500px;
+        height: 400px;
+    }
+
+    #create_light {
+        padding-top: 1rem;
     }
 
     .design {
-        height: 500px;
+        height: 400px;
+    }
+
+    #design {
+        padding-top: 1rem;
     }
 
 }
