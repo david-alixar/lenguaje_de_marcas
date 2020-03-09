@@ -114,15 +114,29 @@
     </div>
     <script>
         $(function() {
-            //Captura del evento para mostrar u ocultar
+            //Captura del even para mostrar u ocultar
+            var anchura = $(window).width();
+                if (anchura > 992) {
+                    $(".menu_item").show();
+                   
+
+                } else if (anchura <992) {  
+                    $(".menu_item").hide();
+                }
+
             $(".icon").click(function() {
-            $(".menu_item").toggle();
+                $(".menu_item").toggle();
             });
+
             $(window).resize(function() {
-            var anchura = $(this).width();
-            if (anchura > 576 && anchura < 992) {
-                $(".menu_item").show();
-            }
+                var anchura = $(this).width();
+                if (anchura > 992) {
+                    $(".menu_item").show();
+                   
+
+                } else if (anchura <992) {  
+                    $(".menu_item").hide();
+                }
             });
         });
     </script>

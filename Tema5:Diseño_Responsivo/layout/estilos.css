@@ -5,6 +5,7 @@
 .container {
     background-color: rgb(39, 61, 70);
     font-size: 2.5vw;
+    font-family: 'Lato', sans-serif;
 }
 
 img {
@@ -15,7 +16,6 @@ img {
     display: flex;
     justify-content: space-between;
     margin-right: 4rem;
-    margin-bottom: 2rem;
 }
 
 #grafpedia {
@@ -36,12 +36,16 @@ img {
 
 #input {
     padding-top: 0.5rem;
+    width: 50%;
+}
+#input input{
+    width: 100%;
 }
 
 .menu {
     color: green;
     
-    padding-left: 4rem;
+    padding-left: 1rem;
     padding-bottom: 2rem;
 }
 .menu_item{
@@ -413,6 +417,7 @@ button {
         text-align: center;
         border-top-left-radius: 0.5rem;
         border-top-right-radius: 0.5rem;
+        margin-top: 1rem;
     }
     
 
@@ -464,7 +469,7 @@ button {
     }
 
     #texto_boton {
-        width: 80%;
+        width: 75%;
         font-size: 1.7vw;
         padding-top: 1rem;
     }
