@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    font-size: 2.5vw;
+}
+
+.header {
+    background-color: rgb(48, 47, 47);
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+    font-size: 5vw;
+}
+
+i {
+    color: white;
+    width: 3%;
+}
+
+#logo {
+    width: 20%;
+    padding-bottom: 0.5rem;
+}
+
+.menu {
+    display: none;
+}
+
+.search {
+    display: none;
+}
+
+#hdos {
+    margin-top: 0;
+    padding-top: 0.5rem;
+}
+
+.formulario {
+    display: none;
+}
+
+.main {
+    background-color: grey;
+    color: white;
+    text-align: center;
+}
+
+button {
+    background-color: pink;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 3px solid pink;
+    color: white;
+}
+
+#looking {
+    background-color: rgb(48, 47, 47);
+    font-size: 2.5vw;
+    padding: 0.5rem 0rem;
+}
+
+#fotos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fotos {
+    width: 50%;
+    border: 3px solid rgb(167, 163, 163);
+    padding: 0.5rem;
+}
+
+.fotos>img {
+    width: 100%;
+}
+
+.fotos>div>i {
+    color: pink;
+    width: 7%;
+}
+
+@media screen and (min-width: 576px) {
+    .header {
+        font-size: 4vw;
+    }
+
+    i {
+        width: 3%;
+        padding-top: 1.5rem;
+    }
+
+    #logo {
+        width: 40%;
+        padding-bottom: 0.5rem;
+        margin-left: 2rem;
+    }
+
+    button {
+        margin-top: 0.5rem;
+    }
+
+    .formulario {
+        display: flex;
+    }
+
+    #formulario {
+        padding-top: 2rem;
+        background-color: white;
+        color: black;
+        height: 225px;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        padding-left: 1rem;
+    }
+
+    #looking {
+        margin-top: 0.5rem;
+    }
+
+    #username {
+        margin-bottom: 0.5rem;
+    }
+    #fotos{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    #username{
+        width: 95%;
+    }
+    #email{
+        width: 95%;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    header .fa-bars{
+        display: none;
+    }
+    #logo{
+        width: 15%;
+    }
+    .header{
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 0.5rem;
+        justify-content: space-between;
+    }
+    .logo_menu{
+        display: flex;
+        width: 60%;
+    }
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        font-size: 1.8vw;
+    }
+    #lista{
+        display: flex;
+        justify-content: space-between;
+        list-style:none;
+        font-size: 1.5vw;
+    }
+    #lista > li{
+        width: 25%;
+        padding-right: 1rem;
+        color:white;
+    }
+    .search{
+        display: flex;
+        width: 40%;
+    }
+    .search > form{
+        display: inline-flex;
+        justify-content: end;
+    }
+    .search > form > label{
+        font-size: 1.5vw;
+        padding-top: 1rem;
+        color:white;
+    }
+    #search{
+        width: 45%;
+        height: 30px;
+        margin-top: 0.6rem;
+    }
+    #hdos{
+        font-size: 2vw;
+    }
+    #formulario{
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
+    .fotos{
+        width: 25%;
+    }
+}
