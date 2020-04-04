@@ -1,0 +1,170 @@
+
+@use "sass:map";
+$antique-white: #FAEBD7;
+$background-color-container: $antique-white;
+$blue: #000099;
+$h1-header-color: $blue;
+$green: #00cc00;
+$h4-formacion-color: $green;
+$yellow: #FFFF00;
+$h4-experiencia-color: $yellow;
+$red: #FF0000;
+$h4-idiomas-color: $red;
+$purple: #FF0099;
+$h4-otros-color: $purple;
+$brown: #800000;
+$enlace-normal: $brown;
+$hover: #00cc07;
+$enlace-hover: $hover;
+$visited: #FF0009;
+$enlace-visited: $visited;
+$active: #000091;
+$enlace-active: $active;
+$border-color:#000000;
+$border-style: "solid";
+$border-width:0.1rem;
+$border-radius: 1rem;
+$main-container-width: 80%;
+$indianred: #CD5C5C;
+$h4-formacion-color-medio: $indianred;
+$lightcoral: #F08080;
+$h4-experiencia-color-medio: $lightcoral;
+$salmon: #FA8072;
+$h4-idiomas-color-medio: $salmon;
+$darksalmon: #E9967A;
+$h4-otros-color-medio: $darksalmon;
+$grey: #808080;
+$h4-formacion-color-grande: $grey;
+$lime: #00FF00;
+$h4-experiencia-color-grande: $lime;
+$aqua: #00FFFF;
+$h4-idiomas-color-grande: $aqua;
+$fuchsia: #FF00FF;
+$h4-otros-color-grade: $fuchsia;
+
+$breakpoint: (
+    "pequeño":576,
+    "medio":768,
+    "grande":992
+);
+
+$pequeno : map.get($breakpoint,"pequeño");
+$grande : map.get($breakpoint, "grande");
+
+.container{
+    width: $main-container-width;
+    margin: 0px auto;
+    background-color: $background-color-container;
+}
+
+h1{
+    color: $h1-header-color;
+}
+
+.formacion_academica{
+    padding: 0.2rem;
+    border: $border-width #{$border-style} $border-color;
+    border-radius: $border-radius;
+    margin-top : 1rem;
+    margin-bottom : 1rem;
+    h4{
+        color: $h4-formacion-color;
+    }    
+}
+
+.experiencia_profesional{
+    padding: 0.2rem;
+    border: $border-width #{$border-style} $border-color;
+    border-radius: $border-radius;
+    margin-bottom : 1rem;
+    h4{
+    color: $h4-experiencia-color;
+    }
+}
+
+.idiomas {
+    padding: 0.2rem;
+    border: $border-width #{$border-style} $border-color;
+    border-radius: $border-radius;
+    margin-bottom : 1rem;
+    h4{
+    color: $h4-idiomas-color;
+    }
+}
+
+.otros_datos {
+    padding: 0.2rem;
+    border: $border-width #{$border-style} $border-color;
+    border-radius: $border-radius;
+    h4{
+    color: $h4-otros-color;
+    }
+}
+
+a{
+    color: $brown;
+    text-decoration: none;
+    &:hover {
+        color:$enlace-hover;
+    }
+    &:visited {
+        color:$enlace-visited;
+    }
+    &:active{
+        color:$enlace-active;
+    }
+}
+
+@media screen and (min-width: #{$pequeno}px){ 
+    .formacion_academica h4{
+        color: $h4-formacion-color-medio; 
+    }
+    
+    .experiencia_profesional h4{
+        color: $h4-experiencia-color-medio;
+    }
+    
+    .idiomas h4{
+        color: $h4-idiomas-color-medio;;
+    }
+    
+    .otros_datos h4{
+        color: $h4-otros-color-medio;
+    }
+}
+
+@media screen and (min-width: #{$grande}px){
+    .container{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .formacion_academica {
+        width: 100%;
+        h4{
+        color: $h4-formacion-color-grande;
+        } 
+    }
+    
+    .experiencia_profesional {
+        width: 100%;
+        h4{
+        color: $h4-experiencia-color-grande;
+        }
+    }
+    
+    .idiomas {
+        width: 45%;
+        margin-right: 1%;
+        h4{
+        color: $h4-idiomas-color-grande;
+        }
+    }
+    
+    .otros_datos{
+        width: 45%;
+        margin-left: 1%;
+        h4{
+        color: $h4-otros-color-grade;
+        }
+    }
+}
