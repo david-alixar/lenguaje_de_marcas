@@ -1,0 +1,84 @@
+/*fondo principal*/
+.fondoPrincipal{
+    background-color: rgb(39, 61, 70);
+}
+
+/*color títulos*/
+.color_titulos{
+color: rgb(163, 196, 238)
+}
+
+/*color Vector y colindantes*/
+#color_vector{
+    color: rgb(16, 59, 139)
+}
+
+#input input {
+    width: 95%;
+}
+
+#boton {
+    max-width: 100%;
+}
+
+.pad{
+    padding-top:1rem;
+}
+
+.menu{
+    background-color: rgba(107, 176, 197, 0.774);
+    color:white;
+    width:100%;
+}
+
+.titulo_responsivo{
+    font-size: 6vw;
+}
+
+.texto_responsivo{
+    font-size: 3vw;
+}
+
+/*fondo cajas*/
+.fondoCajas{
+    background-color: rgb(143, 178, 194);
+}
+
+/*fondo títulos*/
+.fondoTitulos{
+    background-color: rgb(91, 131, 141);
+}
+/*Marco fotos de products*/
+.marco{
+    border: 3px solid gray;
+}
+/*Marco fotos de blog*/
+.foto_blog{
+    border: 3px solid white;
+    width: 100%;
+    height: 100px;
+}
+
+@media screen and (max-width: 380px) {
+    #input {
+        display: none;
+    }
+    #grafpedia {
+        justify-content: space-evenly;
+    }
+    #grafpediah1 {
+        padding-top: 1.5rem;
+
+    }
+}
+@media screen and (min-width: 576px) {
+    #blog img{
+        max-width: 50%;
+    }
+    .blog{
+        display:flex;
+    }
+    .texto_responsivo{
+        font-size: 2vw;
+    }
+}
