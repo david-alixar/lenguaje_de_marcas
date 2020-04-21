@@ -1,8 +1,10 @@
 
 @use "sass:map";
-$antique-white: #FAEBD7;
+$light-theme:true;
+$dark-theme:false;
+$antique-white: rgb(242, 235, 245);
 $background-color-container: $antique-white;
-$blue: #000099;
+$blue: #3c3cfa;
 $h1-header-color: $blue;
 $green: #00cc00;
 $h4-formacion-color: $green;
@@ -24,7 +26,7 @@ $border-color:#000000;
 $border-style: "solid";
 $border-width:0.1rem;
 $border-radius: 1rem;
-$main-container-width: 80%;
+$main-container-width: 100%;
 $indianred: #CD5C5C;
 $h4-formacion-color-medio: $indianred;
 $lightcoral: #F08080;
@@ -41,6 +43,7 @@ $aqua: #00FFFF;
 $h4-idiomas-color-grande: $aqua;
 $fuchsia: #FF00FF;
 $h4-otros-color-grade: $fuchsia;
+$color-contenedores: $background-color-container;
 
 $breakpoint: (
     "pequeño":576,
@@ -54,12 +57,25 @@ $grande : map.get($breakpoint, "grande");
 .container{
     width: $main-container-width;
     margin: 0px auto;
-    background-color: $background-color-container;
+    @if $light-theme{
+        background-color: white;
+        color: rgb(73, 73, 73);
+    }
+    @else if $dark-theme{
+        background-color: black;
+        color: rgb(204, 204, 204);
+    }
+    @else{
+        background-color: $background-color-container;
+
+    }
 }
+
 
 h1{
     color: $h1-header-color;
 }
+
 
 .formacion_academica{
     padding: 0.2rem;
@@ -115,6 +131,62 @@ a{
     }
 }
 
+#modulos{
+    text-align: center;
+}
+
+.modulos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.modulos div{
+    width: 100%;
+}
+
+table{
+    border-collapse:collapse;
+}
+
+.horas{
+    text-align: end;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+$num: 1;
+$color-list: #007486, #00afb8, #03c6d0, #03e2ee, #38ecf5, #b8f5f9, #dff3f4; 
+
+@while $num<8 {
+    tr:nth-child(#{$num}){
+        color: #011f24;
+        background-color: nth($color-list, $num);
+    }
+    $num: $num+1;
+}
+
+$mapa:(
+    h1:"2.5rem",
+    h2:"2rem",
+    h3:"1.5rem",
+    h4:"1.2rem"
+);
+
+@each $t,$v in $mapa {
+    #{$t}{
+    font-size: #{$v};
+    }  
+}
+
+.row >* {
+    padding: 1rem;
+}
+
 @media screen and (min-width: #{$pequeno}px){ 
     .formacion_academica h4{
         color: $h4-formacion-color-medio; 
@@ -131,40 +203,59 @@ a{
     .otros_datos h4{
         color: $h4-otros-color-medio;
     }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    $num_columnas: 10;
+@function calcularAnchura($i){
+    @return (100 / $num_columnas)*$i;
+}
+@for $i from 1 through $num_columnas{
+    .row > .col-#{$i}{
+        padding: 1rem;
+        width: #{calcularAnchura($i)} + "%";
+    }
+}
 }
 
 @media screen and (min-width: #{$grande}px){
-    .container{
-        display:flex;
-        flex-wrap: wrap;
-    }
+    
     .formacion_academica {
-        width: 100%;
         h4{
         color: $h4-formacion-color-grande;
-        } 
+        }
     }
     
     .experiencia_profesional {
-        width: 100%;
         h4{
         color: $h4-experiencia-color-grande;
         }
     }
     
     .idiomas {
-        width: 45%;
-        margin-right: 1%;
         h4{
         color: $h4-idiomas-color-grande;
         }
     }
     
     .otros_datos{
-        width: 45%;
-        margin-left: 1%;
         h4{
         color: $h4-otros-color-grade;
         }
+    }
+
+    $num_columnas: 10;
+@function calcularAnchuraGrande($i){
+    @return (100 / $num_columnas)*$i;
+}
+@for $i from 1 through $num_columnas{
+    .row > .col-grande-#{$i}{
+        width: #{calcularAnchuraGrande($i)} + "%";
+    }
     }
 }
