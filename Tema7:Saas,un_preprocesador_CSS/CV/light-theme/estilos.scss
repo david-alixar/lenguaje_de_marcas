@@ -4,6 +4,7 @@ $light-theme:true;
 $dark-theme:false;
 $antique-white: rgb(242, 235, 245);
 $background-color-container: $antique-white;
+$color-container: black;
 $blue: #3c3cfa;
 $h1-header-color: $blue;
 $green: #00cc00;
@@ -43,7 +44,7 @@ $aqua: #00FFFF;
 $h4-idiomas-color-grande: $aqua;
 $fuchsia: #FF00FF;
 $h4-otros-color-grade: $fuchsia;
-$color-contenedores: $background-color-container;
+$background-color-contenedores: $background-color-container;
 
 $breakpoint: (
     "pequeño":576,
@@ -54,21 +55,24 @@ $breakpoint: (
 $pequeno : map.get($breakpoint,"pequeño");
 $grande : map.get($breakpoint, "grande");
 
+
+
+@if $light-theme{
+    $background-color-container: white;
+    $color-container: rgb(73, 73, 73);
+    $background-color-contenedores: rgb(241, 237, 237);
+}
+@else if $dark-theme{
+    $background-color-container: black;
+    $color-container: rgb(204, 204, 204);
+    $background-color-contenedores: rgb(48, 47, 47);
+}
+
 .container{
     width: $main-container-width;
     margin: 0px auto;
-    @if $light-theme{
-        background-color: white;
-        color: rgb(73, 73, 73);
-    }
-    @else if $dark-theme{
-        background-color: black;
-        color: rgb(204, 204, 204);
-    }
-    @else{
-        background-color: $background-color-container;
-
-    }
+    background-color: $background-color-container;
+    color: $color-container;
 }
 
 
@@ -76,39 +80,46 @@ h1{
     color: $h1-header-color;
 }
 
+.margenes{
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
 
 .formacion_academica{
+    background-color: $background-color-contenedores;
     padding: 0.2rem;
     border: $border-width #{$border-style} $border-color;
     border-radius: $border-radius;
     margin-top : 1rem;
-    margin-bottom : 1rem;
     h4{
         color: $h4-formacion-color;
     }    
 }
 
 .experiencia_profesional{
+    background-color: $background-color-contenedores;
     padding: 0.2rem;
     border: $border-width #{$border-style} $border-color;
     border-radius: $border-radius;
-    margin-bottom : 1rem;
     h4{
     color: $h4-experiencia-color;
     }
 }
 
 .idiomas {
+    background-color: $background-color-contenedores;
     padding: 0.2rem;
     border: $border-width #{$border-style} $border-color;
     border-radius: $border-radius;
-    margin-bottom : 1rem;
     h4{
     color: $h4-idiomas-color;
     }
 }
 
 .otros_datos {
+    background-color: $background-color-contenedores;
     padding: 0.2rem;
     border: $border-width #{$border-style} $border-color;
     border-radius: $border-radius;
@@ -192,8 +203,11 @@ $mapa:(
         color: $h4-formacion-color-medio; 
     }
     
-    .experiencia_profesional h4{
-        color: $h4-experiencia-color-medio;
+    .experiencia_profesional{
+        margin-top:1rem;
+        h4{
+            color: $h4-experiencia-color-medio;
+        }
     }
     
     .idiomas h4{
@@ -226,12 +240,14 @@ $mapa:(
 @media screen and (min-width: #{$grande}px){
     
     .formacion_academica {
+        margin-right: -1.15rem;
         h4{
         color: $h4-formacion-color-grande;
         }
     }
     
     .experiencia_profesional {
+        margin-top : 0rem;
         h4{
         color: $h4-experiencia-color-grande;
         }

@@ -9,38 +9,45 @@ h1 {
   color: #3c3cfa;
 }
 
+.margenes {
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
 .formacion_academica {
+  background-color: #302f2f;
   padding: 0.2rem;
   border: 0.1rem solid #000000;
   border-radius: 1rem;
   margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 .formacion_academica h4 {
   color: #00cc00;
 }
 
 .experiencia_profesional {
+  background-color: #302f2f;
   padding: 0.2rem;
   border: 0.1rem solid #000000;
   border-radius: 1rem;
-  margin-bottom: 1rem;
 }
 .experiencia_profesional h4 {
   color: #FFFF00;
 }
 
 .idiomas {
+  background-color: #302f2f;
   padding: 0.2rem;
   border: 0.1rem solid #000000;
   border-radius: 1rem;
-  margin-bottom: 1rem;
 }
 .idiomas h4 {
   color: #FF0000;
 }
 
 .otros_datos {
+  background-color: #302f2f;
   padding: 0.2rem;
   border: 0.1rem solid #000000;
   border-radius: 1rem;
@@ -151,6 +158,9 @@ h4 {
     color: #CD5C5C;
   }
 
+  .experiencia_profesional {
+    margin-top: 1rem;
+  }
   .experiencia_profesional h4 {
     color: #F08080;
   }
@@ -221,10 +231,16 @@ h4 {
   }
 }
 @media screen and (min-width: 992px) {
+  .formacion_academica {
+    margin-right: -1.15rem;
+  }
   .formacion_academica h4 {
     color: #808080;
   }
 
+  .experiencia_profesional {
+    margin-top: 0rem;
+  }
   .experiencia_profesional h4 {
     color: #00FF00;
   }
