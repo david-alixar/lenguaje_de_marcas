@@ -1,0 +1,68 @@
+
+@use "sass:map";
+$background-color-menu:rgb(38, 202, 231);
+$color-font-menu: black;
+$antique-white: rgb(242, 235, 245);
+$background-color-container: $antique-white;
+$color-container: black;
+$blue: #3c3cfa;
+$h1-header-color: $blue;
+$green: #00cc00;
+$h4-formacion-color: $green;
+$yellow: #FFFF00;
+$h4-experiencia-color: $yellow;
+$red: #FF0000;
+$h4-idiomas-color: $red;
+$purple: #FF0099;
+$h4-otros-color: $purple;
+$brown: #800000;
+$enlace-normal: $brown;
+$hover: #00cc07;
+$enlace-hover: $hover;
+$visited: #FF0009;
+$enlace-visited: $visited;
+$active: #000091;
+$enlace-active: $active;
+$border-color:#000000;
+$border-style: "solid";
+$border-width:0.1rem;
+$border-radius: 1rem;
+$main-container-width: 100;
+$indianred: #CD5C5C;
+$h4-formacion-color-medio: $indianred;
+$lightcoral: #F08080;
+$h4-experiencia-color-medio: $lightcoral;
+$salmon: #FA8072;
+$h4-idiomas-color-medio: $salmon;
+$darksalmon: #E9967A;
+$h4-otros-color-medio: $darksalmon;
+$grey: #808080;
+$h4-formacion-color-grande: $grey;
+$lime: #00FF00;
+$h4-experiencia-color-grande: $lime;
+$aqua: #00FFFF;
+$h4-idiomas-color-grande: $aqua;
+$fuchsia: #FF00FF;
+$h4-otros-color-grade: $fuchsia;
+$background-color-contenedores: $background-color-container;
+
+$breakpoint: (
+    "pequeño":576,
+    "medio":768,
+    "grande":992
+);
+
+$pequeno : map.get($breakpoint,"pequeño");
+$grande : map.get($breakpoint, "grande");
+
+$num: 1;
+$color-list: #007486, #00afb8, #03c6d0, #03e2ee, #38ecf5, #b8f5f9, #dff3f4; 
+
+$mapa:(
+    h1:"2.5rem",
+    h2:"2rem",
+    h3:"1.5rem",
+    h4:"1.2rem"
+);
+
+$num_columnas: 10;

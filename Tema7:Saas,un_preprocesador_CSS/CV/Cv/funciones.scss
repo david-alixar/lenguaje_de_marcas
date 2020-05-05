@@ -1,0 +1,3 @@
+@function calcularAnchura($i){
+    @return (100 / $num_columnas)*$i;
+}

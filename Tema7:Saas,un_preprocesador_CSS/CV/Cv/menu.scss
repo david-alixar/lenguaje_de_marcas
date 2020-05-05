@@ -1,0 +1,20 @@
+#navbar {
+    overflow: hidden;
+    background-color: $background-color-menu;
+    padding: 0.75rem;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+#navbar a {
+    color: $color-font-menu;
+    padding-right: 1rem;
+    float: left;
+    display: block;
+    text-align: center;
+}
+
+#navbar a:hover {
+    color: rgb(249, 252, 252);
+}

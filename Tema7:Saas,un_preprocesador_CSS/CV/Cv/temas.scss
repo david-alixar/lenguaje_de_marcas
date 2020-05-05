@@ -1,0 +1,17 @@
+$light-theme:false;
+$dark-theme:true;
+
+@if $light-theme{
+    $background-color-container: rgb(241, 229, 229);
+    $color-container: rgb(73, 73, 73);
+    $background-color-menu: rgb(145, 12, 52);
+    $color-font-menu: rgb(235, 160, 189);
+    $background-color-contenedores: white;
+}
+@else if $dark-theme{
+    $background-color-container: black;
+    $color-container: rgb(204, 204, 204);
+    $background-color-menu: rgb(201, 165, 235);
+    $color-font-menu: rgb(35, 7, 73);
+    $background-color-contenedores: rgb(48, 47, 47);
+}

@@ -1,0 +1,30 @@
+@while $num<8 {
+    tr:nth-child(#{$num}){
+        color: #011f24;
+        background-color: nth($color-list, $num);
+    }
+    $num: $num+1;
+}
+
+@each $t,$v in $mapa {
+    #{$t}{
+    font-size: #{$v};
+    }  
+}
+
+@media screen and (min-width: #{$pequeno}px){ 
+    @for $i from 1 through $num_columnas{
+        .row > .col-#{$i}{
+            padding: 1rem;
+            width: #{calcularAnchura($i)} + "%";
+        }
+    }
+}
+
+@media screen and (min-width: #{$grande}px){  
+    @for $i from 1 through $num_columnas{
+        .row > .col-grande-#{$i}{
+            width: #{calcularAnchura($i)} + "%";
+        }
+    }          
+}

@@ -1,0 +1,16 @@
+@mixin centrado_horizontal($margen, $anchura){
+    margin: #{$margen}px auto;
+    width: #{$anchura} + "%";
+}
+
+@mixin justificado{
+    justify-content: center;
+}
+
+@mixin centrado_vertical {
+    text-align: center;
+}
+
+@mixin fin_texto{
+    text-align: end;
+}

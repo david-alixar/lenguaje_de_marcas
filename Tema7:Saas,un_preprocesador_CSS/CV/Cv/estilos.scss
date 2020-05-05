@@ -1,0 +1,171 @@
+
+
+.container{
+    @include centrado_horizontal(0,#{$main-container-width});
+    background-color: $background-color-container;
+    color: $color-container;
+}
+
+
+h1{
+    color: $h1-header-color;
+    @include centrado_vertical;
+}
+
+.margenes{
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+
+.formacion_academica{
+    background-color: $background-color-contenedores;
+    padding: 0.2rem;
+    border: $border-width #{$border-style} $border-color;
+    border-radius: $border-radius;
+    margin-top : 1rem;
+    h4{
+        color: $h4-formacion-color;
+        @include centrado_vertical;
+    }    
+}
+
+.experiencia_profesional{
+    background-color: $background-color-contenedores;
+    padding: 0.2rem;
+    border: $border-width #{$border-style} $border-color;
+    border-radius: $border-radius;
+    h4{
+        color: $h4-experiencia-color;
+        @include centrado_vertical;
+    }
+}
+
+.idiomas {
+    background-color: $background-color-contenedores;
+    padding: 0.2rem;
+    border: $border-width #{$border-style} $border-color;
+    border-radius: $border-radius;
+    h4{
+        color: $h4-idiomas-color;
+        @include centrado_vertical;
+    }
+}
+
+.otros_datos {
+    background-color: $background-color-contenedores;
+    padding: 0.2rem;
+    border: $border-width #{$border-style} $border-color;
+    border-radius: $border-radius;
+    h4{
+        color: $h4-otros-color;
+        @include centrado_vertical;
+    }
+}
+
+a{
+    color: $brown;
+    text-decoration: none;
+    &:hover {
+        color:$enlace-hover;
+    }
+    &:visited {
+        color:$enlace-visited;
+    }
+    &:active{
+        color:$enlace-active;
+    }
+}
+
+#modulos{
+    @include centrado_vertical;
+}
+
+.modulos{
+    display: flex;
+    flex-wrap: wrap;
+    @include justificado;
+}
+
+.modulos div{
+    width: 100%;
+}
+
+table{
+    border-collapse:collapse;
+}
+
+.horas{
+    @include fin_texto;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.row >* {
+    padding: 1rem;
+}
+
+@media screen and (min-width: #{$pequeno}px){ 
+    .formacion_academica h4{
+        color: $h4-formacion-color-medio; 
+    }
+    
+    .experiencia_profesional{
+        margin-top:1rem;
+        h4{
+            color: $h4-experiencia-color-medio;
+        }
+    }
+    
+    .idiomas h4{
+        color: $h4-idiomas-color-medio;;
+    }
+    
+    .otros_datos h4{
+        color: $h4-otros-color-medio;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: #{$grande}px){
+    
+    .formacion_academica {
+        margin-right: -1.15rem;
+        h4{
+        color: $h4-formacion-color-grande;
+        }
+    }
+    
+    .experiencia_profesional {
+        margin-top : 0rem;
+        h4{
+        color: $h4-experiencia-color-grande;
+        }
+    }
+    
+    .idiomas {
+        h4{
+        color: $h4-idiomas-color-grande;
+        }
+    }
+    
+    .otros_datos{
+        h4{
+        color: $h4-otros-color-grade;
+        }
+    }
+    
+    
+    
+}
