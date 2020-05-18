@@ -1,0 +1,16 @@
+{
+  "name": "cv_con_sass",
+  "version": "1.0.0",
+  "description": "tarea 1 gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "curso",
+    "tarea"
+  ],
+  "author": "David Gonzalez",
+  "license": "ISC"
+}

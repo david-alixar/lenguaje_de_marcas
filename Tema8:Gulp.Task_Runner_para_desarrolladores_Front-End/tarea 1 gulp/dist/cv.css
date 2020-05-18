@@ -1,0 +1,325 @@
+#navbar {
+  overflow: hidden;
+  background-color: #c9a5eb;
+  padding: 0.75rem;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+
+#navbar a {
+  color: #230749;
+  padding-right: 1rem;
+  float: left;
+  display: block;
+  text-align: center;
+}
+
+#navbar a:hover {
+  color: #f9fcfc;
+}
+
+.container {
+  margin: 0px auto;
+  width: 100%;
+  background-color: black;
+  color: #cccccc;
+}
+
+h1 {
+  color: #3c3cfa;
+  text-align: center;
+}
+
+.margenes {
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.formacion_academica {
+  background-color: #302f2f;
+  padding: 0.2rem;
+  border: 0.1rem solid #000000;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+.formacion_academica h4 {
+  color: #00cc00;
+  text-align: center;
+}
+
+.experiencia_profesional {
+  background-color: #302f2f;
+  padding: 0.2rem;
+  border: 0.1rem solid #000000;
+  border-radius: 1rem;
+}
+.experiencia_profesional h4 {
+  color: #FFFF00;
+  text-align: center;
+}
+
+.idiomas {
+  background-color: #302f2f;
+  padding: 0.2rem;
+  border: 0.1rem solid #000000;
+  border-radius: 1rem;
+}
+.idiomas h4 {
+  color: #FF0000;
+  text-align: center;
+}
+
+.otros_datos {
+  background-color: #302f2f;
+  padding: 0.2rem;
+  border: 0.1rem solid #000000;
+  border-radius: 1rem;
+}
+.otros_datos h4 {
+  color: #FF0099;
+  text-align: center;
+}
+
+a {
+  color: #800000;
+  text-decoration: none;
+}
+a:hover {
+  color: #00cc07;
+}
+a:visited {
+  color: #FF0009;
+}
+a:active {
+  color: #000091;
+}
+
+#modulos {
+  text-align: center;
+}
+
+.modulos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.modulos div {
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.horas {
+  text-align: end;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.row > * {
+  padding: 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  .formacion_academica h4 {
+    color: #CD5C5C;
+  }
+
+  .experiencia_profesional {
+    margin-top: 1rem;
+  }
+  .experiencia_profesional h4 {
+    color: #F08080;
+  }
+
+  .idiomas h4 {
+    color: #FA8072;
+  }
+
+  .otros_datos h4 {
+    color: #E9967A;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 992px) {
+  .formacion_academica {
+    margin-right: -1.15rem;
+  }
+  .formacion_academica h4 {
+    color: #808080;
+  }
+
+  .experiencia_profesional {
+    margin-top: 0rem;
+  }
+  .experiencia_profesional h4 {
+    color: #00FF00;
+  }
+
+  .idiomas h4 {
+    color: #00FFFF;
+  }
+
+  .otros_datos h4 {
+    color: #FF00FF;
+  }
+}
+tr:nth-child(1) {
+  color: #011f24;
+  background-color: #007486;
+}
+
+tr:nth-child(2) {
+  color: #011f24;
+  background-color: #00afb8;
+}
+
+tr:nth-child(3) {
+  color: #011f24;
+  background-color: #03c6d0;
+}
+
+tr:nth-child(4) {
+  color: #011f24;
+  background-color: #03e2ee;
+}
+
+tr:nth-child(5) {
+  color: #011f24;
+  background-color: #38ecf5;
+}
+
+tr:nth-child(6) {
+  color: #011f24;
+  background-color: #b8f5f9;
+}
+
+tr:nth-child(7) {
+  color: #011f24;
+  background-color: #dff3f4;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 576px) {
+  .row > .col-1 {
+    padding: 1rem;
+    width: 10%;
+  }
+
+  .row > .col-2 {
+    padding: 1rem;
+    width: 20%;
+  }
+
+  .row > .col-3 {
+    padding: 1rem;
+    width: 30%;
+  }
+
+  .row > .col-4 {
+    padding: 1rem;
+    width: 40%;
+  }
+
+  .row > .col-5 {
+    padding: 1rem;
+    width: 50%;
+  }
+
+  .row > .col-6 {
+    padding: 1rem;
+    width: 60%;
+  }
+
+  .row > .col-7 {
+    padding: 1rem;
+    width: 70%;
+  }
+
+  .row > .col-8 {
+    padding: 1rem;
+    width: 80%;
+  }
+
+  .row > .col-9 {
+    padding: 1rem;
+    width: 90%;
+  }
+
+  .row > .col-10 {
+    padding: 1rem;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .row > .col-grande-1 {
+    width: 10%;
+  }
+
+  .row > .col-grande-2 {
+    width: 20%;
+  }
+
+  .row > .col-grande-3 {
+    width: 30%;
+  }
+
+  .row > .col-grande-4 {
+    width: 40%;
+  }
+
+  .row > .col-grande-5 {
+    width: 50%;
+  }
+
+  .row > .col-grande-6 {
+    width: 60%;
+  }
+
+  .row > .col-grande-7 {
+    width: 70%;
+  }
+
+  .row > .col-grande-8 {
+    width: 80%;
+  }
+
+  .row > .col-grande-9 {
+    width: 90%;
+  }
+
+  .row > .col-grande-10 {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */
