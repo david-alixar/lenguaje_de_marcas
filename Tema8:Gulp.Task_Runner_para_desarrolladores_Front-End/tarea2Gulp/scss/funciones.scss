@@ -1,0 +1,10 @@
+//// @access public
+//// @author David Gonzalez
+
+/// @parameter {float} $i -Valor de cada una de las iteraciones para llamar a la función
+/// @return {float}
+/// @example scss - Función calcular anchura
+
+@function calcularAnchura($i){
+    @return (100 / $num_columnas)*$i;
+}

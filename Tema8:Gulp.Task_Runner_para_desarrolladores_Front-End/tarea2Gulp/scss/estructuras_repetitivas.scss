@@ -1,0 +1,39 @@
+//// @access public
+//// @author David Gonzalez
+
+
+/// Este bucle sirve para controlar el color que debe llevar la tabla módulos de fondo
+@while $num<8 {
+    tr:nth-child(#{$num}){
+        color: #011f24;
+        background-color: nth($color-list, $num);
+    }
+    $num: $num+1;
+}
+
+@each $t,$v in $mapa {
+    #{$t}{
+    font-size: #{$v};
+    }  
+}
+
+@media screen and (min-width: #{$pequeno}px){ 
+    /// Este for dentro de las pantallas medianas sirve para controlar el ancho de las columnas
+    /// @group ancho_columnas
+    @for $i from 1 through $num_columnas{
+        .row > .col-#{$i}{
+            padding: 1rem;
+            width: #{calcularAnchura($i)} + "%";
+        }
+    }
+}
+
+@media screen and (min-width: #{$grande}px){  
+     /// Este for dentro de las pantallas grandes sirve para controlar el ancho de las columnas
+     /// @group ancho_columnas
+    @for $i from 1 through $num_columnas{
+        .row > .col-grande-#{$i}{
+            width: #{calcularAnchura($i)} + "%";
+        }
+    }          
+}

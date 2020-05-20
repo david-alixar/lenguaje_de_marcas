@@ -1,0 +1,32 @@
+//// @access public
+//// @author David Gonzalez
+
+/// Mixin para centrar horizaontalmente
+/// @parameter {integer} $margen --Para darle un margin automatico en px
+/// @parameter {integer} $anchura --Para darle una anchura en %
+
+@mixin centrado_horizontal($margen, $anchura){
+    margin: #{$margen}px auto;
+    width: #{$anchura} + "%";
+}
+
+/// Mixin para justificar contenido
+/// @group alineacion_texto
+
+@mixin justificado{
+    justify-content: center;
+}
+
+/// Mixin para centrar verticalmente
+/// @group alineacion_texto
+
+@mixin centrado_vertical {
+    text-align: center;
+}
+
+/// Mixin para colocar el texto alineado a la derecha
+/// @group alineacion_texto
+
+@mixin fin_texto{
+    text-align: end;
+}
