@@ -11,81 +11,69 @@ $background-color-menu:rgb(38, 202, 231);
 /// @group colores
 $color-font-menu: black;
 /// Establezco una combinación de color
-/// @group colores
 /// @group colores_definidos
 $antique-white: rgb(242, 235, 245);
 /// Este es el color de fondo del container
 /// @group colores
 $background-color-container: $antique-white;
 /// Establezco una combinación de color
-/// @group colores
 /// @group colores_definidos
 $color-container: black;
 /// Establezco una combinación de color
-/// @group colores
 /// @group colores_definidos
 $blue: #3c3cfa;
 /// Este es el color del h1
 /// @group colores
 $h1-header-color: $blue;
 /// Establezco una combinación de color
-/// @group colores
 /// @group colores_definidos
 $green: #00cc00;
 /// Este es el color del apartado de formación
 /// @group colores
 $h4-formacion-color: $green;
 /// Establezco una combinación de color
-/// @group colores
 /// @group colores_definidos
 $yellow: #FFFF00;
 /// Este es el color del apartado de experiencia
 /// @group colores
 $h4-experiencia-color: $yellow;
 /// Establezco una combinación de color
-/// @group colores
 /// @group colores_definidos
 $red: #FF0000;
 /// Este es el color del apartado de idiomas
 /// @group colores
 $h4-idiomas-color: $red;
 /// Establezco una combinación de color
-/// @group colores
 /// @group colores_definidos
 $purple: #FF0099;
 /// Este es el color del apartado de otros
 /// @group colores
 $h4-otros-color: $purple;
 /// Establezco una combinación de color
-/// @group colores
 /// @group colores_definidos
 $brown: #800000;
 /// Este es el color de los enlaces
 /// @group colores
 $enlace-normal: $brown;
 /// Establezco una combinación de color
-/// @group colores
 /// @group colores_definidos
 $hover: #00cc07;
 /// Este es el color de los enlaces con hover
 /// @group colores
 $enlace-hover: $hover;
 /// Establezco una combinación de color
-/// @group colores
 /// @group colores_definidos
 $visited: #FF0009;
 /// Este es el color de los enlaces visitados
 /// @group colores
 $enlace-visited: $visited;
 /// Establezco una combinación de color
-/// @group colores
 /// @group colores_definidos
 $active: #000091;
 /// Este es el color de los enlaces activos
 /// @group colores
 $enlace-active: $active;
 /// Establezco una combinación de color
-/// @group colores
 /// @group colores_definidos
 $border-color:#000000;
 /// Establezco una propiedad para border
@@ -97,56 +85,48 @@ $border-radius: 1rem;
 /// Establezco una propiedad para el container
 $main-container-width: 100;
 /// Establezco una combinación de color
-/// @group colores
 /// @group colores_definidos
 $indianred: #CD5C5C;
 /// Este es el color del apartado de formacion para tablet
 /// @group colores
 $h4-formacion-color-medio: $indianred;
 /// Establezco una combinación de color
-/// @group colores
 /// @group colores_definidos
 $lightcoral: #F08080;
 /// Este es el color del apartado de experiencia para tablet
 /// @group colores
 $h4-experiencia-color-medio: $lightcoral;
 /// Establezco una combinación de color
-/// @group colores
 /// @group colores_definidos
 $salmon: #FA8072;
 /// Este es el color del apartado de idiomas para tablet
 /// @group colores
 $h4-idiomas-color-medio: $salmon;
 /// Establezco una combinación de color
-/// @group colores
 /// @group colores_definidos
 $darksalmon: #E9967A;
 /// Este es el color del apartado de otros para tablet
 /// @group colores
 $h4-otros-color-medio: $darksalmon;
 /// Establezco una combinación de color
-/// @group colores
 /// @group colores_definidos
 $grey: #808080;
 /// Este es el color del apartado de formacion para pc
 /// @group colores
 $h4-formacion-color-grande: $grey;
 /// Establezco una combinación de color
-/// @group colores
 /// @group colores_definidos
 $lime: #00FF00;
 /// Este es el color del apartado de experiencia para pc
 /// @group colores
 $h4-experiencia-color-grande: $lime;
 /// Establezco una combinación de color
-/// @group colores
 /// @group colores_definidos
 $aqua: #00FFFF;
 /// Este es el color del apartado de idiomas para pc
 /// @group colores
 $h4-idiomas-color-grande: $aqua;
 /// Establezco una combinación de color
-/// @group colores
 /// @group colores_definidos
 $fuchsia: #FF00FF;
 /// Este es el color del apartado de otros para pc
@@ -155,7 +135,7 @@ $h4-otros-color-grade: $fuchsia;
 /// Este es el color de contenedores
 /// @group colores
 $background-color-contenedores: $background-color-container;
-
+/// @group colores
 /// Establezco los tamaños que tendré de pantalla, para luego hacer responsiva la página
 $breakpoint: (
     "pequeño":576,
@@ -164,7 +144,6 @@ $breakpoint: (
 );
 
 /// Creo un mapa donde indico con la variable $breakpoint el tamaño para pequeño y grande
-/// @parameter {integer} $breakpoint --Para indicarte el tamaño que tendrá la pantalla
 $pequeno : map.get($breakpoint,"pequeño");
 $grande : map.get($breakpoint, "grande");
 
